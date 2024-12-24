@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thifanee Long messages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@500&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 30px;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .spotify-card {
+            width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .caret {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background-color: #333;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: left 0.3s ease;
+        }
+
+        .additional-message {
+            margin-top: 15px;
+            font-family: 'Caveat', cursive;
+            font-size: 22px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .page-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .page-content.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .pagination {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 30px;
+        }
+
+        .pagination button {
+            background: none;
+            border: none;
+            font-size: 30px;
+            color: #333;
+            cursor: pointer;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .pagination button:hover {
+            color: #007bff;
+        }
+
+        .dots {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .dots span {
+            display: inline-block;
+            margin: 0 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ccc;
+            cursor: pointer;
+        }
+
+        .dots span.active {
+            background-color: #333;
+        }
+
+        .input-message {
+            margin-top: 20px;
+            display: none;
+            text-align: center;
+        }
+
+        .input-message.active {
+            display: block;
+        }
+
+        .input-message input {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: 70%;
+        }
+
+        .send-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #8B4513; /* Brown color */
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .send-btn:hover {
+            background-color: #6A3F1B; /* Darker brown on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="spotify-card">
+            <iframe
+                src="https://open.spotify.com/embed/album/5qQUnzRJflShvd927yt2jN?utm_source=generator"
+                width="300"
+                height="80"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media">
+            </iframe>
+        </div>
+        <p class="message">
+           hi love i have something for you::>
+        </p>
+        <div class="additional-message page-content active">
+            <p>
+                Hello thif.  
+
+Yea it’s me miel..  
+
+Merry Christmas and advance Happy New Year! 
+
+Kamusta kana? Sigurado nakausad kana miss nakita 
+
+I just want to say na huli konatong paramdam sayo so I hope na ma-appreciente mo po ito, katulin ng taon no? Parang kahapon lang ang saya natin ang sweet panatin sa isat isa ngayon nag papaalam natayo sa isat isa, ang sakit lang halos dalawang taon tayo mag kasama, hindi konaisip na nasasaktan napala kita. Sobrang tama ka sa mga sinasabi mo, alammoba araw araw kong— araw araw akong nag babackread sa mga chats natin noon, bawat reply mo na na iiyak ako, kasi feel na feel ko yung sobrang pag mamahal mosakin, at ako.. Ang pangit kopala mag mahal hindi kodin alam bakit ganon ako sayo, maybe im just scared?  Maybe? Natatalo ako palagi ng emotion ko, I’II though ready nako, pasensya kana ha I didn’t expect na ganito pala ang totoong pag mamahal, sobrang redflag pala ko sa simula palang, masyadoko nadadala ng emotion ko na baka ganito mangyari pag ganyan ka na baka mag bago ka na baka hyst to the point na nacocontrol napala kita, alam molove ngayon kolang nalaman tama kanaman e, nawala kananga tas pinipilit kong bumalik sayo pero habang mas pinipilit ko mas nauudlot yung hope ko na baka hindi na talaga kaya— baka hindi natalaga mababalik yung nakaraan, love I thought I had changed everything, I thought na ngayon kaya na kita mas mahalin, pero mali pala, nadadalapadin ako ng emotion ko, pero I just want you to know that I’m still not giving up on changing myself, hindi kona maisip na mababalik panatin ang dati, with all the pain I’ve caused you, there’s probably nothing left…just, disppointment and regrets..i didn’t mean na kontrahin ko lahat ng sinasabi mo I didn’t mean that, I’m really sorry, and I never intended to invalidate your feelings. Please don’t tell me you regret our relationship; it hurts me a lot. But maybe But maybe this is the right time for me to say I feel sorry for myself too, for for myself for holding on and continuously hoping for us. It’s breaking me. Maybe I can only fix myself if I let go and walk away. I love you so much, but this doesn’t mean I’ll forget you. I’ll never forget you. I promise to change, and if fate allows us to meet again, I hope there’s still a chance for us..  
+
+ 
+
+As much as I shared with you, a part of me will always remain yours. It wasn’t that I didn’t trust other people, but there was something unique about the way you got to know me. No one else ever understood the real me the way you did. I opened up in ways I didn’t think were possible, and even though I’ll carry those parts of me forward, they’ll never be as close to my heart as you were. You were the one who truly saw me, and I don’t think I could ever let anyone else in that deeply. There was a quiet comfort in knowing that with you, I could just be myself. Even though life took us in different directions and it actually did, I’ll always hold onto the fact that you were the one person who knew me as deeply as anyone ever could.  
+            </p>
+        </div>
+        <div class="additional-message page-content">
+            <p>
+                Sometimes, you make me feel like I actually have a chance with you but when I try to take that chance you make me realize I never really did have a chance. I try not to miss you, I try to let you go, but in the end you’re always in my mind. If you regret loving me, I regret my self even more—regret how I became this way with you. Why did I love you the way I did? Why was my love so flawed, so selfish, so one-sided? Why did I pour everything into you, yet fail to give you the happiness you deserved? Why couldn’t I make you feel truly loved? Now, everything is clearer to me—what I need to change, the truths I was blind to. But even if I change, even if I become a better version of myself, I hope someday I can still show you that change. I hope I can prove to you that I’m not the same Miel you used to know. But maybe… maybe it’s too late for that. Maybe you’re right to have left me. It hurts, but I see it now—you’ve grown so much more without me. When we were together, it was like I had you locked in a cage. Now, you’re free. And that’s what’s better, right? Because we both needed to learn. I had to lose you to understand how love should really be. Looking back, I realize we were both blind. I’m sorry. I’m so sorry for always invalidating your feelings, for not paying attention when I should have, for making you feel unseen. Love, you know how much I loved you. I loved you too much back then. But I never meant to hurt you in the ways that I did. I want to say sorry for all the pain I caused you, for all the disappointments, for every time I let you down. I wish I could make it up to you, but how? It’s far too late to fix things now. It’s unfair, isn’t it?  
+
+I want to turn back time so badly, but I can’t. Now I’m left with memories of us—your pictures, your messages, your voice replaying in my mind. And no matter how hard I try, I can’t erase them. I don’t even want to. Every piece of you, every memory, still matters to me, no matter how much it hurts.I wish I could go back and show you the kind of love you deserved. I wish I could tell you how sorry I am without it being too late. I just… I miss you so much. I still hope, maybe, that there’s some small part of you that remembers the good in us. That there’s still some part of you that loves me, even just a little. But maybe that’s just my heart refusing to let go.You were my greatest love, and losing you taught me so much. 
+
+ 
+
+I look at my phone, filled memories of us. I can’t even delete them. Maybe it would be easier if this phone just broke completely—it’s already cracked anyway. But how can I delete something so precious to me? Every time I look at your photos, I break down in tears. I’ve tried to let go, but I just can’t. It hurt me so bad. And even now, a part of me still hopes—hopes that maybe, just maybe, you’ll come back. I still hold on to the thought that somewhere inside you, there’s a part of you that still loves me, a part that might come back so we can love each other again. Love imissyou so Much, May I try one more time? Just one last time? I know theres nomore, but if theres a chance then iwill, if ever ineed to wait for you then iwill, no excuses if you said that I will definitely say that im willing to wait twice without thinking about it, cuzwhyy? Just seeing your eyes used to be enough to make my entire day. Whenever our eyes met, it felt like home—like you were my home. Whenever I look at your eyes all I see is your gaze looking like your coming back home. Yeaa you’re right. You’ve always been right, you cannot change me cuz im only the one who can change my self to be a better man for you so I hope when I change I hope that ihope that you’ll be back to me that I promise to you that iwill love you again in way you’ve always wantedno  to be loved, in the way that iwont hurt you in anyway that icould make you the most happier. This Christmas and New Year, I dedicate it to you. Every holiday season, my wish is the same: for you to come back, to hold me again. I’m tired of trying to love someone new. I crave love, but if that longing only brings more pain, I’d rather focus on working on myself until you return. I know it won’t be easy for you to come back after everything I’ve done. I know the hurt I caused runs deep. I also hope that there’s a part of you that doesn’t regret our past, even though I gave you so much pain. Why do I always have to be such an idiot? I hate myself for it—so much.  
+
+ 
+
+Please, take care of yourself. I won’t bother you anymore, but make sure to eat well and drink water. You get sick so easily, and I still worry about you even though we’re no longer together. I can’t help but imagine the worst when you’re not okay. Please, stay safe and healthy—health is wealth.  
+
+ 
+
+You’ve gained some weight, and it’s so cute. But… is this the end? 
+            </p>
+        </div>
+        <div class="additional-message page-content">
+            <p>
+                I’ve tried so hard to be calm, to control my emotions, but maybe I’m just not that kind of person. When I’m mad or overwhelme, I lose myself. I say things without thinking about how much they might hurt you. You’re right—I invalidated your feelings so many times that you grew tired of me. And the worst part? I didn’t even realize it back then. 
+
+ 
+
+But please know this: your feelings mattered to me from the start. I don’t know why things turned out the way I did. Love, I’m trying my best to stop invalidating your emotions. Aren’t I? But every time, I fail. I fail, and I lose you a little more each time.  
+
+ 
+
+Okay, I won’t beg for you to come back anymore. I’m letting you go, even if it’s breaking me inside. I’ve thought about this so many times, over and over, and only now am I finally facing the truth—I need to let you go, no matter how much it hurts. Goodbye Love mahal na mahal na mahal na mahal kita, hindiyon mawawala tandaan moyan syaka I hope na hindi mona sinasaktan sarili mo when everything feels like unfair, happy merrychristmas po and advance happy newyear enjoy ka ha ang ganda mo ang pretty mo sobra mas magiging pretty kapa. Byeenag iwan ako ng message input jaan sa baba, if possible lang na gustomo akong imessage sa huling pag kakataonJ anyway goodbye baby I don’t want to do this but I had to. Just like what you said…..  
+
+ 
+
+You’re so pretty morethan everything.  
+            </p>
+        </div>
+
+        <!-- Input message field on the last page -->
+        <div class="input-message">
+            <input type="text" id="userMessage" placeholder="Leave your message here...">
+            <button class="send-btn" id="sendBtn">Send</button>
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Email.js
+        (function() {
+            emailjs.init("nnwzsqXbrplix4VA0"); // Replace with your Email.js user ID
+        })();
+
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const pages = document.querySelectorAll('.page-content');
+        const dots = document.querySelectorAll('.dot');
+        const caret = document.querySelector('.caret');
+        const inputMessage = document.querySelector('.input-message');
+        const sendBtn = document.getElementById('sendBtn');
+        let currentPage = 0;
+
+        function showPage(page) {
+            pages.forEach((p, index) => {
+                p.classList.remove('active');
+                dots[index].classList.remove('active');
+            });
+            pages[page].classList.add('active');
+            dots[page].classList.add('active');
+            if (page === pages.length - 1) {
+                inputMessage.classList.add('active');  // Show the input message field on the last page
+            } else {
+                inputMessage.classList.remove('active');
+            }
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < pages.length - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentPage = index;
+                showPage(currentPage);
+            });
+        });
+
+        caret.addEventListener('mousedown', (e) => {
+            let isDragging = true;
+            let initialX = e.clientX - caret.offsetLeft;
+            const moveCaret = (e) => {
+                if (isDragging) {
+                    let newX = e.clientX - initialX;
+                    newX = Math.max(0, Math.min(newX, window.innerWidth - caret.offsetWidth));
+                    caret.style.left = `${newX}px`;
+                }
+            };
+
+            const stopDragging = () => {
+                isDragging = false;
+                document.removeEventListener('mousemove', moveCaret);
+                document.removeEventListener('mouseup', stopDragging);
+            };
+
+            document.addEventListener('mousemove', moveCaret);
+            document.addEventListener('mouseup', stopDragging);
+        });
+
+        sendBtn.addEventListener('click', () => {
+    const message = document.getElementById('userMessage').value;
+    console.log("Sending message:", message);
+    if (message.trim() === '') {
+        alert('Please enter a message before sending.');
+        return;
+    }
+
+    emailjs.send("service_iz8t7cg", "template_5k2ly2b", {
+        message: message,
+        to_name: "Recipient Name",
+        from_name: "Thifanee Message",
+        to_email: "mielbacton02@gmail.com"
+    }).then((response) => {
+        alert("wehhh, i knewww ittt, i knewww itt there's still part of you that want me.");
+        alert("jokeee ihihihih");
+        alert("im already hacked ur phone:0")
+        console.log("Email.js Response:", response);
+    }).catch((error) => {
+        alert("Failed to send message. Please try again.");
+        console.error("Email.js Error:", error);
+    });
+});
+
+        showPage(currentPage);
+    </script>
+</body>
+</html>
